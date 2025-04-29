@@ -1,0 +1,33 @@
+<!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+        <ul>
+            <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+            <li><a href="/categories/categories.html">คอร์ส</a></li>
+            <li><a href="/all-game/all-game.html">เกมส์ทั้งหมด</a></li>
+            <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+        <div class="toggle-lines top-line"></div>
+        <div class="toggle-lines middle-line"></div>
+        <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="bar">
+        <div class="logo">
+            <a href="/index.html">
+                <img class="img" src="/img/reColor.png" alt="Logo" />
+            </a>
+            <a class="h-1" href="/index.html">
+                <h1>Scramble Quest</h1>
+            </a>
+        </div>
+    </header>

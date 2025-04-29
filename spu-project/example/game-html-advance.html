@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Beginner Level</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
+    <link href="/all-game/game-css-beginner/media.css" rel="stylesheet">
+    <link href="/all-game/example/game-html-advance.css" rel="stylesheet">
+    <script src="/all-game/game-css-beginner/script.js" defer></script>
+    <script src="/all-game/game-css-beginner/word.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/all-game/example/random.js" defer></script>
+</head>
+<body>
+    <span class="loader"></span>
+    <div id="preloader"></div>
+    <!-- Menu remains unchanged -->
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+        <ul>
+            <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+            <li><a href="/categories/categories.html">คอร์ส</a></li>
+            <li><a href="/all-game/all-game.html">เกมส์ทั้งหมด</a></li>
+            <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+        <div class="toggle-lines top-line"></div>
+        <div class="toggle-lines middle-line"></div>
+        <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
+    <div class="bar">
+        <div class="logo">
+            <a href="/index.html">
+            <img class="img" src="/img/reColor.png" alt="Logo" />
+            </a>
+            <a class="h-1" href="/index.html">
+            <h1>Scramble Quest</h1>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <a href="/categories/categories.html" style="color: white; text-decoration: none;"><button id="backBtn">← กลับ</button></a>
+        </header>
+
+        <div class="game-container">
+            <div class="game-card">
+                <h2>Word Scramble</h2>
+                <div class="divider"></div>
+                <div class="word-container">
+                    <div class="scrambled-word" id="scrambledWord"></div>
+                </div>
+
+                <div class="hint-container">
+                    <p>คำใบ้: <span id="hint"></span></p>
+                </div>
+
+                <div class="timer-container">
+                    <p>เวลาที่เหลือ: <span id="timer">30</span>วินาที</p>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="userGuess" placeholder="ใส่คำตอบของคุณ">
+                    <div class="button-container">
+                        <button id="skipBtn">ข้าม</button>
+                        <button id="checkBtn">เช็คคำตอบ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Removed resultsContainer entirely -->
+    <div class="background-video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- Music and audio remain unchanged -->
+    <div class="music">
+        <img id="icon" src="/img/play.png" alt="Play/Pause">
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
+    </div>
+    <audio id="mySong" src="/img/what the bunny doin.wav" autoplay loop></audio>
+    <audio id="correctSound" src="#"></audio>
+    <audio id="wrongSound" src="#"></audio>
+    <audio id="gameOverSound" src="#"></audio>
+</body>
+</html>

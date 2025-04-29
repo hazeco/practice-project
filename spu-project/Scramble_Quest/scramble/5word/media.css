@@ -1,0 +1,301 @@
+/* Mobile First Approach */
+
+/* iPhone SE, Small Mobile Devices (320px) */
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 95%; /* Take up more width on small screens */
+        margin: 10px auto; /* Add margin and center horizontally */
+        padding: 15px;
+    }
+
+    .logo h1 {
+        font-size: 18px; /* Smaller logo text */
+    }
+
+    .menu-toggle {
+        right: 1.5rem; /* Adjust hamburger position */
+        top: 0.6rem;
+    }
+
+    .slide-menu {
+        width: 250px; /* Smaller slide-menu */
+        right: -250px;
+    }
+
+    .slide-menu ul li a {
+        font-size: 24px; /* Smaller text in slide-menu */
+        padding: 10px 15px;
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stats vertically */
+        align-items: center;
+        gap: 10px;
+    }
+    .hearts {
+        margin-bottom: 5px;
+    }
+
+    .word-container {
+        margin: 20px 0;
+    }
+
+    .letter {
+        width: 30px; /* Smaller letter boxes */
+        height: 30px;
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 14px; /* Smaller font in input */
+    }
+    #userGuess{
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px; /* Smaller button padding */
+        font-size: 14px;
+    }
+    .results-card{
+        padding: 15px;
+        width: 95%;
+    }
+
+    .results-stats p{
+        font-size: 16px;
+    }
+    .loader {
+        scale: 1.5;
+    }
+    .music {
+        left: 15px;
+        bottom: 15px;
+    }
+    #icon {
+        width: 40px;
+        height: 40px;
+    }
+    .music input[type="range"]{
+        width: 130px;
+    }
+    .music:hover input[type="range"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    input[type="range"]:hover {
+        width: 150px;
+        height: 13px;
+    }
+    #preloader {
+        background-size: cover;
+        background-position: center;
+    }
+    .bar {
+        height: 50px;
+    }
+
+    .bar .logo {
+        height: 50px;
+    }
+    .bar .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+/* iPhone (375px) */
+@media screen and (min-width: 375px) {
+   .letter {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .container {
+        max-width: 350px;
+    }
+    .bar {
+        height: 55px;
+    }
+    .bar .logo {
+        height: 55px;
+    }
+}
+
+/* iPhone Pro (414px) */
+@media screen and (min-width: 414px) {
+    .container {
+        max-width: 380px;
+    }
+    .bar {
+        height: 60px;
+    }
+    .bar .logo {
+        height: 60px;
+    }
+}
+
+/* Large Mobile Devices (425px) */
+@media screen and (min-width: 425px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+/* Tablets (768px) */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 600px; /* Wider on tablets */
+        padding: 30px;
+    }
+
+    .logo h1 {
+        font-size: 22px; /* Slightly larger logo text */
+    }
+    .letter {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    input {
+        font-size: 16px;
+    }
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .results-card {
+        max-width: 500px;
+    }
+    #preloader {
+        background-size: cover;
+        background-position: center;
+    }
+    #background-video {
+        display: block; /*Show the video again */
+    }
+    body {
+        background-image: none;
+    }
+    .music {
+        left: 30px;
+        bottom: 30px;
+    }
+    #icon {
+        width: 50px;
+        height: 50px;
+    }
+    .music input[type="range"]{
+        width: 190px;
+    }
+    .music:hover input[type="range"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    input[type="range"]:hover {
+        width: 200px;
+        height: 18px;
+    }
+}
+
+/* iPad Pro, Small Laptops (1024px) */
+@media screen and (min-width: 1024px) {
+   .container {
+        max-width: 700px;
+    }
+    .results-card {
+        max-width: 600px;
+    }
+}
+
+/* MacBook Air 13-inch (1280px) */
+@media screen and (min-width: 1280px) {
+     .container {
+        max-width: 900px;
+    }
+    .results-card {
+        max-width: 800px;
+    }
+}
+
+/* Large Laptops (1440px) */
+@media screen and (min-width: 1440px) {
+   .container {
+        max-width: 1100px;
+    }
+    .results-card {
+        max-width: 1000px;
+    }
+}
+
+/* MacBook Air 15-inch (1536px) */
+@media screen and (min-width: 1536px) {
+    .container {
+        max-width: 1300px;
+    }
+     .results-card {
+        max-width: 1200px;
+    }
+}
+
+/* 4K Displays (2560px) */
+@media screen and (min-width: 2560px) {
+   .container {
+        max-width: 1800px;
+    }
+     .results-card {
+        max-width: 1700px;
+    }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-height: 700px) {
+    .music {
+        left: 10px;
+        bottom: 10px;
+    }
+    #icon {
+        width: 35px;
+        height: 35px;
+    }
+    .music input[type="range"]{
+        width: 100px;
+    }
+    .music:hover input[type="range"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    input[type="range"]:hover {
+        width: 120px;
+        height: 10px;
+    }
+}
+
+/* Portrait orientation adjustments */
+@media screen and (orientation: portrait) {
+    
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+   .music {
+        left: 10px;
+        bottom: 10px;
+    }
+    #icon {
+        width: 35px;
+        height: 35px;
+    }
+    .music input[type="range"]{
+        width: 100px;
+    }
+    .music:hover input[type="range"] {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    input[type="range"]:hover {
+        width: 120px;
+        height: 10px;
+    }
+}

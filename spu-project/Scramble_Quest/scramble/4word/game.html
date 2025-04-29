@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>4word-Scramble Quest</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon" />
+    <link href="/scramble/4word/media.css" rel="stylesheet" />
+    <link href="/scramble/4word/style.css" rel="stylesheet" />
+    <script src="/scramble/4word/random.js" defer></script>
+    <script src="/scramble/4word/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/scramble/4word/word.js" defer></script>
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+      <ul>
+        <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+        <li><a href="/scramble/categories.html">เกม</a></li>
+        <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+      <div class="toggle-lines top-line"></div>
+      <div class="toggle-lines middle-line"></div>
+      <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
+    <div class="bar">
+      <div class="logo">
+        <a href="/scramble/categories.html">
+          <img class="img" src="/img/reColor.png" alt="Logo" />
+        </a>
+        <a class="h-1" href="/scramble/categories.html">
+          <h1>Scramble Quest</h1>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <a
+          href="/scramble/categories.html"
+          style="color: white; text-decoration: none"
+          ><button id="backBtn">← กลับ</button></a
+        >
+      </header>
+
+      <div class="game-container">
+        <div class="game-card">
+          <h2>Word Scramble</h2>
+          <div class="divider"></div>
+
+          <div class="stats">
+            <div class="hearts">
+              <span class="heart">❤️</span>
+              <span class="heart">❤️</span>
+              <span class="heart">❤️</span>
+            </div>
+            <div class="streak">
+              <span class="fire">🔥</span>
+              <span>Streak: <span id="streakCount">???</span></span>
+            </div>
+            <div class="word-count">
+              <span>คะแนน: <span id="wordCount">???</span></span>
+            </div>
+          </div>
+
+          <div class="word-container">
+            <div class="scrambled-word" id="scrambledWord"></div>
+          </div>
+
+          <div class="hint-container">
+            <p>คำใบ้: <span id="hint"></span></p>
+          </div>
+
+          <div class="timer-container">
+            <p>เวลาที่เหลือ: <span id="timer">30</span>วินาที</p>
+          </div>
+
+          <div class="input-container">
+            <input type="text" id="userGuess" placeholder="ใส่คำตอบของคุณ" />
+            <div class="button-container">
+              <button id="skipBtn">ข้าม</button>
+              <button id="checkBtn">เช็คคำตอบ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="results-container" id="resultsContainer" style="display: none">
+      <div class="results-card">
+        <h2>ผลสรุป</h2>
+        <div class="divider"></div>
+        <div class="results-stats">
+          <p>คะแนน: <span id="finalScore">0/2</span></p>
+          <p>Streak สูงสุด: <span id="highestStreak">0</span></p>
+          <p>หัวใจที่เหลือ: <span id="heartsRemaining">0</span></p>
+        </div>
+        <div class="results-buttons">
+          <button id="playAgainBtn">เริ่มใหม่</button>
+          <button id="backToMenuBtn">
+            <a
+              href="/scramble/categories.html"
+              style="color: white; text-decoration: none"
+              >กลับสู่เมนู</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="background-video-container">
+      <video autoplay muted loop id="background-video">
+        <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="music">
+      <img id="icon" src="/img/pause.png" alt="Play/Pause" />
+      <input
+        type="range"
+        id="volumeSlider"
+        min="0"
+        max="1"
+        step="0.1"
+        value="0.6"
+      />
+    </div>
+    <audio id="mySong" src="/img/what the bunny doin.wav" autoplay loop></audio>
+    <audio id="correctSound" src="#"></audio>
+    <audio id="wrongSound" src="#"></audio>
+    <audio id="gameOverSound" src="#"></audio>
+  </body>
+</html>

@@ -1,0 +1,612 @@
+/* Base styles for common elements */
+.bar .logo {
+    margin-left: 20px;
+}
+
+.bar .logo h1 {
+    font-size: 16px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFF;
+    z-index: 1;
+}
+
+.menu-toggle {
+    right: 2rem;
+}
+
+/* Common game card styles */
+.all .game1, .all .game2, .all .game3,
+.all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
+.all .cssgame1, .all .cssgame2, .all .cssgame3 {
+    background-color: #eee;
+    border-radius: 20px;
+    margin: 0;
+}
+
+
+/* Small Mobile Devices (375px) */
+@media screen and (max-width: 375px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        max-width: 375px;
+    }
+    .bar .logo {
+        margin-left: 10px;
+        h1 {
+            font-size: 14px;
+        }
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .search-section {
+        width: 90%;
+        max-width: 375px;
+        height: 260px;
+    }
+
+    .searchbar-wrapper {
+        width: 87%;
+    }
+
+    .searchbar {
+        width: 200px;
+    }
+    .menu-toggle {
+        right: 1.5rem;
+    }
+
+    .slide-menu {
+        width: 250px;
+    }
+
+    .slide-menu ul li a {
+        font-size: 24px;
+        padding: 12px 16px;
+    }
+
+    .all {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 100%;
+        height: 380px;
+    }
+
+    .pic {
+        width: 100%;
+        height: 220px;
+    }
+
+    .search-section {
+        padding: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .searchbar {
+        height: 46px;
+        font-size: 0.9rem;
+        padding: 0 45px;
+    }
+
+    .filter-pill {
+        padding: 0.2rem 0.2rem;
+        font-size: 0.9rem;
+    }
+    .all{
+        padding: 0;
+    }
+}
+
+/* Extra Small Mobile Devices (320px) */
+@media screen and (max-width: 320px) {
+    .all {
+        .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+            width: 200px;
+            height: 330px;
+            background-color: #eee;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    }
+    .bar .logo {
+        margin-left: 8px;
+        h1 {
+            font-size: 13px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .menu-toggle {
+        right: 1rem;
+        transform: scale(0.9);
+    }
+
+    .slide-menu {
+        width: 220px;
+    }
+
+    .slide-menu ul li a {
+        font-size: 20px;
+        padding: 10px 14px;
+    }
+
+
+    .pic {
+        width:200px;
+        height: 200px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .search-section {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .searchbar {
+        height: 40px;
+        font-size: 0.8rem;
+        padding: 0 40px;
+    }
+
+    .filter-pill {
+        padding: 0.2rem 0.1rem;
+        font-size: 0.7rem;
+    }
+}
+/* Mobile Devices (320px - 480px) */
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        max-width: 425px;
+        max-width: 768px;
+    }
+
+    .B-name1,
+    .B-name2,
+    .filter-pills {
+        transform: scale(0.8);
+    }
+
+    .search {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-section {
+        width: 90%;
+        max-width: 320px;
+        height: 300px;
+    }
+    .filter-pill {
+        padding: 3px 0.3rem;
+        border: 2px solid #8276F5;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #8276F5;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3scubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+    }
+    .searchbar-wrapper {
+        width: 106%;
+    }
+
+    .searchbar {
+        width: 220px;
+    }
+
+    .all {
+        grid-template-columns: 1fr;
+        margin-left: 6%;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 485px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        min-width: 481px;
+        max-width: 485px;
+    }
+
+    .menu-toggle {
+        right: 2rem;
+        top: 0.8rem;  /* Keep consistent alignment on mobile */
+    }
+
+    .bar .logo {
+        margin-left: 30px;
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    .filter-pill {
+        padding: 0.8rem 1rem;
+        border: 2px solid #8276F5;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #8276F5;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3scubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .search-section {
+        width: 100%;
+        max-width: 485px;
+        height: 320px;
+        padding: 0;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 280px;
+    }
+
+    .B-name1,
+    .B-name2,
+    .filter-pills {
+        transform: scale(0.9);
+    }
+
+    .search {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .all {
+        gap: 10px;
+        margin: 0 4%;
+        padding: 10px;
+    }
+
+    .all .game1, .all .game2, .all .game3, .all .htmlgame1, .all .htmlgame2, .all .htmlgame3, .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .all .pic {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet Devices (481px - 767px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        min-width: 481px;
+        max-width: 768px;
+    }
+
+    .menu-toggle {
+        right: 2rem;
+        top: 0.8rem;  /* Keep consistent alignment on mobile */
+    }
+
+    .bar .logo {
+        margin-left: 30px;
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    .filter-pill {
+        padding: 0.8rem 1rem;
+        border: 2px solid #8276F5;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #8276F5;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3scubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .search-section {
+        width: 90%;
+        max-width: 480px;
+        height: 320px;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 280px;
+    }
+
+    .B-name1,
+    .B-name2,
+    .filter-pills {
+        transform: scale(0.9);
+    }
+
+    .search {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .all {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .all .game1, .all .game2, .all .game3,
+    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
+    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .all .pic {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Laptop/Desktop (768px - 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        min-width: 768px;
+        max-width: 1024px;
+    }
+
+    .search-section {
+        width: 90%;
+        max-width: 800px;
+        padding-bottom: 3%;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 320px;
+    }
+
+    .search {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .all {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        margin: 0 6%;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .menu-toggle {
+        right: 2.5rem;
+        top: 1rem;
+    }
+
+    .bar .logo {
+        margin-left: 2.5rem;
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+
+    .search-section {
+        width: clamp(600px, 90%, 800px);
+        padding: 2rem 0;
+        height: auto;
+    }
+
+    .searchbar-wrapper {
+        width: clamp(280px, 90%, 400px);
+    }
+
+    .searchbar {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .search {
+        gap: 1.25rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .all {
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        gap: 1.5625rem;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .all .game1, .all .game2, .all .game3,
+    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
+    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 3/4;
+        margin: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .all .pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .filter-pills {
+        transform: none;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .BT{
+        display: flex;
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+}
+
+/* iPhone 11 specific styles */
+@media screen and (min-width: 414px) and (max-width: 414px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        max-width: 414px;
+    }
+
+    .bar .logo {
+        margin-left: 15px;
+        h1 {
+            font-size: 16px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .menu-toggle {
+        right: 1.8rem;
+    }
+
+    .search-section {
+        width: 90%;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 217px;
+        height: 45px;
+        font-size: 0.95rem;
+    }
+
+    .filter-pills {
+        transform: none;
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-pill {
+        padding: 0.4rem 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    .all {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .all .game1, .all .game2, .all .game3,
+    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
+    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+        .pic {
+            width: 100%;
+            height: 220px;
+        }
+
+    .BT {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+}

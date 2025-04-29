@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scramble Quest</title>
+    <link rel="stylesheet" href="categories.css">
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+        <ul>
+            <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+            <li><a href="/scramble/categories.html">เกม</a></li>
+            <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+        <div class="toggle-lines top-line"></div>
+        <div class="toggle-lines middle-line"></div>
+        <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
+    <header class="bar">
+        <div class="logo">
+            <a href="/scramble/categories.html">
+                <img class="img" src="/img/reColor.png" alt="Logo" />
+            </a>
+            <a class="h-1" href="/scramble/categories.html">
+                <h1>Scramble Quest</h1>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="/img/slide1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <p class="B-name1">บิดสมองให้สุด</p>
+                    <p class="B-name2">กับภารกิจถอดรหัส!!</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="/img/slide2.jpg" alt="Slide 2">
+                <div class="slide-content">
+                    <p class="B-name1">เปิดโหมดความมันส์</p>
+                    <p class="B-name2">รวดเร็วและแม่นยำ</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="/img/slide3.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <p class="B-name1">ถอดรหัสคำให้ไว</p>
+                    <p class="B-name2">พลิกตัวอักษรให้ถูก!</p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="search-header">
+            <div class="title-wrapper">
+                <h2 class="section-title">มาประลองความรู้ด้วยเกมScramble</h2>
+                <p class="section-subtitle">"เลือกเกมที่เหมาะกับคุณ" 🔥</p>
+            </div>
+            <div class="search-filters">
+                <div class="searchbar-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input class="searchbar" type="text" id="searchBar" placeholder="ค้นหาหมวดที่เหมาะกับคุณ" name="searchBar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-grid">
+        <div class="course-container">
+            <div class="course-card game1">
+                <div class="course-image">
+                    <img src="/img/3char.jpg" alt="English Beginner">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>3 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/3word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card game2">
+                <div class="course-image">
+                    <img src="/img/4char.jpg" alt="English Intermediate">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>4 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/4word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card game3">
+                <div class="course-image">
+                    <img src="/img/5char.jpg" alt="English Advanced">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>5 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/5word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card htmlgame1">
+                <div class="course-image">
+                    <img src="/img/6char.jpg" alt="HTML Beginner">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>6 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/6word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card htmlgame2">
+                <div class="course-image">
+                    <img src="/img/7char.jpg" alt="HTML Intermediate">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>7 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/7word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card cssgame1">
+                <div class="course-image">
+                    <img src="/img/8char.jpg" alt="CSS Beginner">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>8 คำ</p>
+                    <div class="course-action">
+                        <a href="/scramble/8word/game.html">
+                            <button class="start-button">เริ่มเล่น</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="categories.js"></script>
+</body>
+</html>
